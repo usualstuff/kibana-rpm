@@ -1,0 +1,11 @@
+[Unit]
+Description=Open source data visualization platform
+After=network.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/sysconfig/kibana
+ExecStart=/opt/kibana/node/bin/node /opt/kibana/src/bin/kibana.js
+
+[Install]
+WantedBy=multi-user.target
