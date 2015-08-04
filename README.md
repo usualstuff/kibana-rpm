@@ -1,1 +1,1 @@
-# kibana-systemd-unit
+# kibana-rpm
